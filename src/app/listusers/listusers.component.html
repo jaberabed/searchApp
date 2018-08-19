@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <h2>List of Users Repositories </h2>
+    </div>
+    <table class="table table-sm table-hover">
+        <tr *ngFor="let list of reposilistUserstories.items">
+            <td>User Name {{list.name}}</td>
+            <td>Profile User
+                <img src="{{list.owner.avatar_url}}" class="img-circle img-responsive" alt="profile Image">
+            </td>
+        </tr>
+    </table>
+</div>
